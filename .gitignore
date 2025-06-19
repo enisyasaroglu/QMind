@@ -1,0 +1,58 @@
+# Python specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.Python
+build/
+dist/
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Virtual Environment
+.venv/
+venv/
+env/
+*.env # IMPORTANT: This ignores any file ending with .env (like your .env for python-dotenv)
+# If you use Anaconda:
+qmind_env/ # If your conda env is directly inside the project folder. More often, conda envs are outside.
+.conda/
+.anaconda/
+
+# Operating System / IDE specific files
+.DS_Store # macOS
+Thumbs.db # Windows
+ehthumbs.db # Windows
+.vscode/ # VS Code specific settings (you might want to keep some if shared, but usually ignore)
+.idea/ # PyCharm IDE files
+
+# Log files
+*.log
+logs/ # If you create a 'logs' directory
+
+# Data files (IMPORTANT: You generally DO NOT want to commit large datasets or sensitive data)
+data/          # If you have a 'data' folder for raw or processed data
+*.csv
+*.feather
+*.parquet
+*.json
+*.sqlite # Your database file if you use SQLite (e.g., db.sqlite3)
+*.db
+
+# Secret / Configuration files
+config/*.pyc # Compiled config files
+*.ini
+*.cfg
+*.yaml
+*.yml
+*.json # Be careful: config.json might be important. Only ignore if temporary/local.
+
+# Any custom temporary files you create
+temp/
+tmp/
+*.tmp
+*.bak
