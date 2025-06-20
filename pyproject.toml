@@ -1,0 +1,47 @@
+# pyproject.toml in /Users/enisyasaroglu/QMind/
+
+[project]
+name = "qmind"
+version = "0.1.0"
+description = "A quantitative trading framework"
+readme = "README.md"
+requires-python = ">=3.11" # Adjust to your Python version if different
+license = { file = "LICENSE" } # Assuming you might add a LICENSE file
+authors = [
+  { name = "Enis Yasaroglu", email = "enis.yasaroglu@example.com" }, # Update with your name/email
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scipy",
+    "seaborn",
+    "tensorflow",
+    "torch", # Use 'torch' for PyTorch (cpuonly is handled by the install command)
+    "torchvision",
+    "torchaudio",
+    "alpaca-trade-api", # Or "alpaca-py" if you migrate
+    "ccxt",
+    "binance",
+    "pyarrow",
+    "fastparquet",
+    "redis",
+    "plotly",
+    "scikit-learn",
+    "gymnasium",
+    "requests",
+    "python-dotenv",
+    "tqdm",
+    "streamlit",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/QMind" # Update with your GitHub repo URL if you have one
+"Bug Tracker" = "https://github.com/yourusername/QMind/issues"
+
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"] # Tell setuptools to look for packages inside the 'src' directory

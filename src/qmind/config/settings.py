@@ -47,6 +47,11 @@ INITIAL_CAPITAL = float(os.getenv("INITIAL_CAPITAL", 100000.0))
 # --- UI SETTINGS ---
 DASHBOARD_PORT = int(os.getenv("DASHBOARD_PORT", 8501))
 
+# --- ALPACA API SETTINGS ---
+ALPACA_API_KEY = os.getenv("ALPACA_API_KEY")
+ALPACA_SECRET_KEY = os.getenv("ALPACA_SECRET_KEY")
+ALPACA_BASE_URL = os.getenv("ALPACA_BASE_URL", "https://paper-api.alpaca.markets")
+
 # --- ADD MORE SETTINGS AS YOUR PROJECT GROWS ---
 # For example, specific thresholds for indicators, model hyper-parameters,
 # notification settings (email, Telegram API keys), etc.
